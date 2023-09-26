@@ -1,10 +1,10 @@
 package main
 
-import "fmt"
-
-var deckSize int
-
 func main() {
-	deckSize = 20
-	fmt.Println(deckSize)
+	cards := newDeck()
+	cards.print()
+}
+
+func newCard() string {
+	return "Five of Diamonds"
 }
